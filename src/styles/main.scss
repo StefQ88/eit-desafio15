@@ -1,0 +1,14 @@
+
+@use "utils/variables";
+@use "utils/mixins";
+
+@use "base/reset";
+@use "layout/grid" ;
+
+@use "pages/home";
+@use "pages/catalog";
+@use "pages/movieDetail";
+
+@use "components/card"
+
+

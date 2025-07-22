@@ -1,0 +1,78 @@
+@use "../utils/variables" as *;
+
+.movie-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    color: $white-color;
+
+    &__status {
+        text-align: center;
+        font-size: 1.2rem;
+        color: $primary-color;
+        margin-top: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1000px;
+        width: 100%;
+        padding: 1rem;
+        background-color: $secondary-dark;
+        border-radius: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        margin-bottom: 2rem;
+    }
+
+    &__poster {
+        width: 360px;
+        border-radius: 0.5rem;
+        object-fit: cover;
+        flex-shrink: 0;
+
+    }
+
+    &__info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h2 {
+            font-size: 2rem;
+            color: $primary-color;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $white-color;
+            line-height: 1.5;
+            margin: 0;
+        }
+    }
+
+    &__back {
+        margin: 1.5rem;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        border-radius: 0.5rem;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}

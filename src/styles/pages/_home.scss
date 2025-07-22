@@ -1,0 +1,53 @@
+@use "../utils/variables" as*;
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+
+  background: linear-gradient(145deg,
+      $secondary-color 60%,
+      rgba($primary-color, 0.2) 100%);
+
+  color: $white-color;
+
+  &__content {
+    max-width: 700px;
+    padding: 2rem 0;
+
+    h1,
+    h2 {
+      color: $primary-color;
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      color: $white-color;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__button {
+    background-color: $primary-color;
+    color: $white-color;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $strong-primary-color;
+    }
+  }
+}

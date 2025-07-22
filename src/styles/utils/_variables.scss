@@ -1,0 +1,45 @@
+
+
+//Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$grid-width: (
+  xs: 360px,
+  sm: 520px,
+  md: 720px,
+  lg: 880px,
+  xl: 1120px,
+  xxl: 1200px
+);
+
+$grid-columns: 12;
+
+//Spacings
+$spacings: (
+    m: margin,
+    mt: margin-top,
+    mb: margin-bottom,
+    ml: margin-left,
+    mr: margin-right,
+    p: padding,
+    pt: padding-top,
+    pb: padding-bottom,
+    pl: padding-left,
+    pr: padding-right,
+);
+
+$primary-color:         #0984E3;   
+$strong-primary-color:  #065FC1;
+$secondary-color:       #1E272E;
+$secondary-dark:        #131B21;
+$white-color:           #F5F6FA;
+$body-bg-color:         $secondary-color;
+
+$color-error:#ea3030;
