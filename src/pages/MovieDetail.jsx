@@ -29,8 +29,8 @@ const MovieDetail = () => {
       }
     };
 
-    fetchMovie(); // función cuando se monta el componente
-  }, [id]); // se ejecuta si cambia el id
+    fetchMovie(); 
+  }, [id]); 
 
   if (loading) {
     return <Box className="movie-detail__status">Cargando película...</Box>;
